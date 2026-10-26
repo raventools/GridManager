@@ -13,9 +13,10 @@
         }
     ],
     "require": {
-        "domnikl/statsd": "^2.2"
+        "php": ">=7.4",
+        "slickdeals/statsd": "^3.0"
     },
     "require-dev":{
-        "mockery/mockery":"0.9.4"
+        "mockery/mockery":"^1.6"
     }
 }

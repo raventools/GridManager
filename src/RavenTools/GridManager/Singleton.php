@@ -16,7 +16,7 @@ abstract class Singleton {
 	}
 
 	// enforce singleton-ness
-	final private function __clone() { }
-	final private function __wakeup() { }
+	private function __clone() { }
+	public function __wakeup() { throw new \Exception("cannot unserialize singleton"); }
 	protected function __construct() { }
 }
