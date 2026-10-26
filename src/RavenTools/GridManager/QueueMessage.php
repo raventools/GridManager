@@ -64,6 +64,7 @@ class QueueMessage implements JsonSerializable {
 		];
 	}
 
+	#[\ReturnTypeWillChange]
 	public function jsonSerialize() {
 		return $this->to_array();
 	}

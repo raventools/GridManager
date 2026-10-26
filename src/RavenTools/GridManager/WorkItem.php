@@ -72,6 +72,7 @@ class WorkItem implements JsonSerializable {
 		return $this->state;
 	}
 
+	#[\ReturnTypeWillChange]
 	public function jsonSerialize() {
 		return $this->to_array();
 	}
